@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="https://mygithubpage/publications">
+  <title>Publications | CreativeSpark</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      background: #f9f9f9;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .profile-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-picture {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    
+    .profile-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #4a4ae7;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+      color: #4ecdc4;
+    }
+    
+    .main-content {
+      margin-top: 120px; /* Adjust this value to the height of your header */
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 2rem 0;
+      background: linear-gradient(135deg, #4a4ae7, #4ecdc4);
+      color: white;
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    .publications {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 2em 0;
+    }
+    
+    .publication {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .publication:hover {
+      transform: translateY(-5px);
+    }
+    
+    .publication h3 {
+      margin-top: 0;
+      color: #4ecdc4;
+    }
+    
+    .publication-meta {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 1em;
+    }
+    
+    .read-more {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #4ecdc4;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    
+    .read-more:hover {
+      background: #45b7aa;
+    }
+    
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+    
+    .filters {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2em;
+    }
+    
+    .filter-btn {
+      background: #4ecdc4;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .filter-btn:hover, .filter-btn.active {
+      background: #45b7aa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="profile-container">
+        <img src="image.png" alt="Your Name" class="profile-picture">
+        <span class="profile-name">Your Name</span>
+      </div>
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/home.html#works">Works</a></li>
+        <li><a href="/Publications.html">Publications</a></li>
+        <li><a href="/blog.html">Blogs</a></li>
+        <li><a href="/CV.html">CV</a></li>
+        <li><a href="/home.html#about">About</a></li>
+        <li><a href="/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container main-content">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="journal">Journal Articles</button>
+      <button class="filter-btn" data-filter="conference">Conference Papers</button>
+      <button class="filter-btn" data-filter="book">Book Chapters</button>
+    </div>
+
+    <div class="publications">
+      <article class="publication" data-type="journal">
+        <h3>The Future of Web Design: AI-Driven Interfaces</h3>
+        <div class="publication-meta">
+          <span>Journal of Human-Computer Interaction</span> | 
+          <span>May 2023</span>
+        </div>
+        <p>This paper explores the potential impact of artificial intelligence on web design, discussing how AI can enhance user experiences through personalized and adaptive interfaces.</p>
+        <a href="#" class="read-more">Read Full Paper</a>
+      </article>
+
+      <article class="publication" data-type="conference">
+        <h3>Enhancing User Engagement through Gamification in E-learning Platforms</h3>
+        <div class="publication-meta">
+          <span>International Conference on E-Learning</span> | 
+          <span>September 2022</span>
+        </div>
+        <p>A study on the effectiveness of gamification techniques in online learning environments, presenting case studies and best practices for implementation.</p>
+        <a href="#" class="read-more">View Presentation</a>
+      </article>
+
+      <article class="publication" data-type="book">
+        <h3>Responsive Web Design: Principles and Best Practices</h3>
+        <div class="publication-meta">
+          <span>Web Development Handbook, 3rd Edition</span> | 
+          <span>January 2022</span>
+        </div>
+        <p>A comprehensive chapter covering the fundamentals of responsive web design, including fluid grids, flexible images, and media queries.</p>
+        <a href="#" class="read-more">Read Chapter</a>
+      </article>
+
+      <article class="publication" data-type="journal">
+        <h3>The Role of Typography in Digital Brand Identity</h3>
+        <div class="publication-meta">
+          <span>Design Studies Quarterly</span> | 
+          <span>November 2021</span>
+        </div>
+        <p>An analysis of how typography influences brand perception in digital environments, with insights from eye-tracking studies and user surveys.</p>
+        <a href="#" class="read-more">Read Full Paper</a>
+      </article>
+
+      <article class="publication" data-type="conference">
+        <h3>Accessibility in Web Applications: A Framework for Developers</h3>
+        <div class="publication-meta">
+          <span>Web Accessibility Conference</span> | 
+          <span>June 2021</span>
+        </div>
+        <p>Presents a practical framework for integrating accessibility considerations throughout the web development process, ensuring inclusive design for all users.</p>
+        <a href="#" class="read-more">View Presentation</a>
+      </article>
+
+      <article class="publication" data-type="book">
+        <h3>The Psychology of Color in User Interface Design</h3>
+        <div class="publication-meta">
+          <span>UX Design Compendium</span> | 
+          <span>March 2021</span>
+        </div>
+        <p>Explores the emotional and cognitive effects of color choices in UI design, providing guidelines for effective color schemes in various application contexts.</p>
+        <a href="#" class="read-more">Read Chapter</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 CreativeSpark. All rights reserved.</p>
+      <p>Powered by GitHub Pages | Design by Your Name</p>
+    </div>
+  </footer>
+
+  <script>
+    // Filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const publications = document.querySelectorAll('.publication');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        publications.forEach(pub => {
+          if (filter === 'all' || pub.getAttribute('data-type') === filter) {
+            pub.style.display = 'block';
+          } else {
+            pub.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

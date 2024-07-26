@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://mygithubpage/cv"><title>Curriculum Vitae | CreativeSpark</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f0f0f0;
+        color: #333;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .main-content {
+        margin-top: 120px; /* Adjust this value to the height of your header */
+      }
+      header {
+        background: #f9f9f9;
+        padding: 1rem 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      
+      header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .profile-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .profile-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      
+      .profile-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #4a4ae7;
+      }
+      h1, h2 {
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        color: #4ecdc4;
+        border-bottom: 2px solid #4ecdc4;
+        padding-bottom: 0.3em;
+      }
+      nav {
+        background: #333;
+        padding: 1em 0;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #4ecdc4;
+      }
+      .section {
+        margin-bottom: 2em;
+      }
+      .entry {
+        margin-bottom: 1.5em;
+      }
+      .entry-title {
+        font-weight: bold;
+        margin-bottom: 0.3em;
+      }
+      .entry-date {
+        font-style: italic;
+        color: #666;
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .skill {
+        background: #4ecdc4;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 0.9em;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 2em;
+      }
+      .download-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #4ecdc4;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+      }
+      .download-btn:hover {
+        background: #45b7aa;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="profile-container">
+          <img src="/api/placeholder/50/50" alt="Your Name" class="profile-picture">
+          <span class="profile-name">Your Name</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/home.html#works">Works</a></li>
+            <li><a href="/Publications.html">Publications</a></li>
+            <li><a href="/blog.html">Blogs</a></li>
+            <li><a href="/CV.html">CV</a></li>
+            <li><a href="/home.html#about">About</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+          </ul>
+        </nav>  
+      </nav>
+    </header>
+    
+    
+    <main class="container main-content">
+      <section class="section">
+        <h2>Professional Summary</h2>
+        <p>Creative and detail-oriented web developer with over 8 years of experience in crafting engaging and user-friendly digital experiences. Specializing in front-end development with a strong foundation in UX/UI design principles. Passionate about leveraging cutting-edge technologies to solve complex problems and create innovative web solutions.</p>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-title">Master of Science in Web Engineering</div>
+          <div class="entry-date">2015 - 2017</div>
+          <div>University of Web Technologies</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Bachelor of Science in Computer Science</div>
+          <div class="entry-date">2011 - 2015</div>
+          <div>Digital State University</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Work Experience</h2>
+        <div class="entry">
+          <div class="entry-title">Senior Front-end Developer</div>
+          <div class="entry-date">2019 - Present</div>
+          <div>TechInnovate Solutions</div>
+          <ul>
+            <li>Lead a team of 5 developers in creating responsive and accessible web applications</li>
+            <li>Implemented modern front-end frameworks (React, Vue.js) to improve application performance and user experience</li>
+            <li>Collaborated with UX designers to translate wireframes and mockups into functional prototypes</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-title">Web Developer</div>
+          <div class="entry-date">2015 - 2019</div>
+          <div>CreativeWeb Agency</div>
+          <ul>
+            <li>Developed and maintained websites for a diverse portfolio of clients across various industries</li>
+            <li>Optimized website performance, resulting in a 40% increase in page load speed</li>
+            <li>Implemented SEO best practices, improving client website rankings in search results</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Vue.js</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Git</span>
+          <span class="skill">Responsive Design</span>
+          <span class="skill">UX/UI Design</span>
+          <span class="skill">SEO</span>
+          <span class="skill">Performance Optimization</span>
+          <span class="skill">Agile Methodologies</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+        <div class="entry">
+          <div class="entry-title">Google UX Design Professional Certificate</div>
+          <div class="entry-date">2022</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">AWS Certified Developer - Associate</div>
+          <div class="entry-date">2021</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Publications</h2>
+        <div class="entry">
+          <div class="entry-title">"The Future of Web Design: AI-Driven Interfaces"</div>
+          <div class="entry-date">Journal of Human-Computer Interaction, May 2023</div>
+        </div>
+        <div class="entry">
+          <div class="entry-title">"Responsive Web Design: Principles and Best Practices"</div>
+          <div class="entry-date">Web Development Handbook, 3rd Edition, January 2022</div>
+        </div>
+      </section>
+
+      <div style="text-align: center; margin-top: 2em;">
+        <a href="#" class="download-btn">Download PDF Version</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 CreativeSpark. All rights reserved.</p>
+        <p>Powered by GitHub Pages | Design by Alex Creativesmith</p>
+      </div>
+    </footer>
+  </body>
+</html>
